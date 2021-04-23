@@ -1,10 +1,12 @@
 function valueretrieval(){
      var x=document.getElementsByClassName("yes")
      var y=document.getElementsByClassName("no")
-     var z =ocument.getElementsByClassName("dont know")
+     var z =document.getElementsByClassName("dontknow")
          
                     
                      var i
+                     var s
+                     var q
                      var county=0
                      var countn=0
                      var countd=0
@@ -12,11 +14,13 @@ function valueretrieval(){
                      if (x[i].checked==true){
                          county=county+1
                      }
-                     if(y[i].checked==true){
+                     for(q=0;q<y.length;q++)
+                     if(y[q].checked==true){
                          countn=countn+1
                      }
-                     if(y[i].checked==true){
-                         countn=countn+1
+                     for(s=0;s<z.length;s++)
+                     if(z[s].checked==true){
+                         countd=countd+1
                      }
                            
                      
@@ -27,4 +31,8 @@ function valueretrieval(){
                    console.log(percentcountn)
                    percentcountd=countd/10*100 
                    console.log(percentcountd)
-                    }     
+                   
+            
+                       
+                       
+            }  

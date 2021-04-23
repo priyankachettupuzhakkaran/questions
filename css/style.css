@@ -19,6 +19,15 @@
    font-family: cursive;
    margin-top:100px;
    margin-left:250px;
+}
    
-
+.mydiv1{
+    display:flex;
+}
+.ynd{
+    margin-left:400px;
+   
+}
+.identity{
+    width:300px
 }

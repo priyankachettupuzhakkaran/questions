@@ -33,6 +33,7 @@
             </div>
         </header>
         <div id="contentcontainer">
+            <forms>
             <li id= "q1">Is hyper text mark up language full form of HTML</li>
             <input type="checkbox" class="yes" name="q1" value="Yes">
             <label for="yes"> Yes</label>
@@ -89,9 +90,26 @@
             <input type="radio" class="no" name="q10" value="false" /> No
             <input type="radio" class="dontknow" name="q10" value="dont know" /> I Dont Know<br>
             
-            <button id="mybutton" onclick="valueretrieval()">submit</button>
+            
+        </forms>
     </div>
-    <script type="text/javascript" src="D:\projects\questions\js\marks.js">
+    
+    <div class="mydiv1">
+    <div id="noofyes" class="identity">no of yes checked</div>
+    <div id="yess" class="ynd"></div>
+    </div>
+    <div class="mydiv1">
+    <div id="noofno" class="identity">no of No checked </div>
+    <div id="nos" class="ynd"></div>
+    </div>
+    <div class="mydiv1">
+    <div id= "noofdontknow" class="identity">no of dont know checked</div>
+    <div id="dontknows" class="ynd"></div>
+    </div>
+
+<button id="mybutton" onclick="marks()">view marks</button>
+<script type="text/javascript" src="D:\projects\questions\js\marks.js"></script>
+    <script type="text/javascript" src="D:\projects\questions\js\questions.js">
 
     </script>
         
