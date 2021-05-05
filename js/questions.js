@@ -1,38 +1,22 @@
-function valueretrieval(){
-     var x=document.getElementsByClassName("yes")
-     var y=document.getElementsByClassName("no")
-     var z =document.getElementsByClassName("dontknow")
-         
-                    
-                     var i
-                     var s
-                     var q
-                     var county=0
-                     var countn=0
-                     var countd=0
-                     for (i=0;i<x.length;i++)
-                     if (x[i].checked==true){
-                         county=county+1
-                     }
-                     for(q=0;q<y.length;q++)
-                     if(y[q].checked==true){
-                         countn=countn+1
-                     }
-                     for(s=0;s<z.length;s++)
-                     if(z[s].checked==true){
-                         countd=countd+1
-                     }
-                           
-                     
-                       
-                   percentcounty=county/10*100 
-                   console.log(percentcounty)
-                   percentcountn=countn/10*100 
-                   console.log(percentcountn)
-                   percentcountd=countd/10*100 
-                   console.log(percentcountd)
-                   
-            
-                       
-                       
-            }  
+var questionaire=
+[{
+    question:"what is HTML?",
+    type:"checkbox",
+    values:["yes", "No","Dont know"]
+},
+{
+    question:"what is javascript?",
+    type:"radio",
+    values:["yes","No", "Dont know"]
+}]
+var i ;
+for (i=0;i<questionaire.length;i++){
+    var q1=document.getElementById("contentcontainer")
+      var q1div= document.createElement("div")
+      q1div.id = 'r'+i;
+      q1div.appendChild(document.createTextNode(questionaire[i].question))
+      q1.appendChild(q1div)
+      
+      
+    
+}0
