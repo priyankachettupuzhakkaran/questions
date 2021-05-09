@@ -86,8 +86,30 @@
     <div id="dontknows" class="ynd"></div>
     </div>
     <button type="button"  onclick="marks()" class="btn btn-primary">Submit</button>
-    <script type="text/javascript" src="D:\projects\questions\js\questions.js">
+    <p>hello dear</p>
+    <script type="text/javascript" src="D:\projects\questions\js\jquery-3.6.0.min.js"></script>
+   <script>
+     
+     console.log($("div"))
+     var pdiv = $( "p" ).add( "div" );
+     console.log(pdiv)
+     console.log($( "div" ).add( "p" ).addClass("widget"));
+     $( "p" ).add( "<p id='new'>how are you</p>" )
+  .css( "background-color", "red" ).appendTo(document.body);
+  console.log($( "li" ).add( document.getElementsByTagName( "p" )[0] )
+  .css( "background-color", "yellow" ));
+     
+$( document ).ready(function() {
+ $( "div" ).click(function(event) {
 
+     alert( "Thanks for visiting!" );
+     event.preventDefault();
+ });
+
+});
+$( "#noofdontknow" ).bind( "click", function() {
+  alert( $( this ).text() );
+});
     </script>
         
     </body>
