@@ -4,22 +4,19 @@
         excel in interviews
     </title>
     <link rel="stylesheet" href="D:\projects\questions\css\bootstrap.css">
-    <style>
-      .result1,.result2,.result3{
-        display:flex;
-      }
-    </style>
+    <link rel="stylesheet" href="D:\projects\questions\css\style.css">
+  
 </head>
 <body>
     <header>
         
        
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" background-color= "rgb(11, 226, 226)">
             <a class="navbar-brand" href="indexes.html">
                 <div  class="nav flex-column">
                 <img src="D:\projects\questions\images\mylogo.jpg" width="50" height="50" class="d-inline-block align-top" alt=""></a>
                 
-                   <a class="navbar-brand" href="indexes.html">Interview Questions</a>
+                   <a class="navbar-brand" href="indexes.html" font-family="sans-serif" color="red">Interview Questions</a>
                 </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -43,78 +40,8 @@
     </header>
     
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-  <script>
-  var $row=$("<div class='row'></div>")
-  var $col1=$("<div class='col-6 col-md-4'></div>")
-   var $col2=$("<div class='col-md-8'></div>")
-   $row.append($col1).append($col2)
-    
-
-  questions=[{question:"what is html?",
-  types:"checkbox",
-  options:["yes","No","dontknow"]},
-{question:"what is javascript?",
-  types:"radio",
-  options:["yes","No","dontknow"]}]
-  jQuery.each( questions, function( i, val ){
-    var $div = $("<div class='mydiv '></div");
-     $(".col-md-8").append($div)
-      var $li =$("<li>");
-        var q=questions[i].question
-        var $adiv=$div.append($li.text(q));
-        jQuery.each(questions[i].options,function(j,va){
-          var x= questions[i].types
-          
-       var d="<input type="+ x +" " +"id="+va+i+" " +"class="+va+" "+"name=q"+i +">"+"<label for="+va+i+" "+ "class=form-check-label"+">"+questions[i].options[j]+"</label>"
-        var $k=$("<div class= 'form-check form-check-inline'>").append($(d))
-        $div.append($k)
-        //$adiv.append($(d))
-          
-       $("input").addClass(" form-check-input")
-       $("label").addClass("form-check-label") 
-        $("div.form-check form-check-inline")
-  $("body").append($div);
-  })
-})
-$("body").append($("<button onclick='submit()' class='btn btn-primary'>submit</button>"))
-var $result1=$("<div class='result1'></div>")
-var $result2=$("<div class='result2'></div>")
-var $result3=$("<div class='result3'></div>")
-var $re1=$result1.append($("<div class='yup'>No. of Yes checkbox checked:</div>")).append($("<div class='percenty'></div>"))
-var $re2=$result2.append($("<div class='nope'>No. of No checkbox checked:</div>")).append($("<div class='percentn'></div>"))
-var $re3=$result3.append($("<div class='neither'>No. of dontknow checkbox checked:</div>")).append($("<div class='percentd'></div>"))
-$("body").append($re1)
-$("body").append($re2)
-$("body").append($re3)
-function submit(){
-var x=$("input.yes")
-var y=$("input.No")
-var z=$("input.dontknow")
-var t
-var l
-var m
-var county=0
-var countn=0
-var countd=0
-for(t=0; t<x.length; t++)
-if (x[t].checked==true){
-  county=county+1
-}
-for(l=0; l<y.length; l++)
-if (y[l].checked==true){
-  countn=countn+1
-}
-for(m=0; m<z.length; m++)
-if (z[m].checked==true){
-  countd=countd+1
-}
-percentcounty=(county/questions.length)*100
-percentcountn=(countn/questions.length)*100
-percentcountd=(countd/questions.length)*100
-$(".percenty").html(percentcounty)
-$(".percentn").html(percentcountn)
-$(".percentd").html(percentcountd)
-}
+  <script src="D:\projects\questions\js\my.js">
+ 
 </script>
 
 </body>

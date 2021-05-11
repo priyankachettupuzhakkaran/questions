@@ -1,33 +1,33 @@
-#headertop{
-    background-color: brown;
-    color: rgb(223, 182, 20);
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    height:150px;
-    width:100%;
-}
-#pagename{
-    margin-left: 0px;
-    font-size: 20px;
-    display:flex;
-}
-#help{
-   color:darkblue;
-   font-size: 80px;
-   font-family: cursive;
-   margin-top:100px;
-   margin-left:250px;
-}
-   
-.mydiv1{
-    display:flex;
-}
-.ynd{
-    margin-left:400px;
-   
-}
-.identity{
-    width:300px
-}
+
+      .result1,.result2,.result3{
+        display: flex;
+        color: dodgerblue;
+      }
+      div.form-check, div.form-check-inline{
+        margin-left: 30px;
+      }
+      
+      .yup,.nope,.neither{
+        width: 300px;
+      }
+      .percenty,.percentn,.percentd{
+        margin-left: 25px;
+      }
+      .col-6, .col-md-4{
+        background-color: hsl(55, 64%, 79%);
+      }
+      .col-md-8{
+        background-color: rgb(243, 234, 137);
+        font-family: cursive;
+      }
+      .row{
+        height: 100%;
+      }
+      nav{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+      }
+      div.nav{
+        text-align: center;
+        
+      }
+  
