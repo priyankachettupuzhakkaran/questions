@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <title>
+            excel in interviews
+        </title>
+        <link rel="stylesheet" href="D:\projects\questions\css\bootstrap.css">
+    </head>
+    <body>
+        <header>
+            
+           
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="indexes.html">
+                    <div  class="nav flex-column">
+                    <img src="D:\projects\questions\images\mylogo.jpg" width="100" height="100" class="d-inline-block align-top" alt=""></a>
+                    
+                       <a class="navbar-brand" href="indexes.html">Interview Questions</a>
+                    </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="indexes.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="questions.html">Questions <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item active">
+                        <a class="nav-link" href="indexes.html">Answers <span class="sr-only">(current)</span></a>
+                      </li>
+                </div>
+                
+            </nav>
+            
+        </header>
+        
+            <forms>
+            
+                      
+              
+              <li id= "q1">Is hyper text mark up language full form of HTML</li>
+           
+             <div class="form-check form-check-inline">
+              
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">No</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Dont Know</label>
+                  </div>
+              </div>
+              <li id= "q6">Is hyper text mark up language full form of HTML</li>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">No</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                <label class="form-check-label" for="inlineRadio3">Dont Know</label>
+              </div>
+        </forms>
+    
+    
+    <div class="mydiv1">
+    <div id="noofyes" class="identity">no of yes checked</div>
+    <div id="yess" class="ynd"></div>
+    </div>
+    <div class="mydiv1">
+    <div id="noofno" class="identity">no of No checked </div>
+    <div id="nos" class="ynd"></div>
+    </div>
+    <div class="mydiv1">
+    <div id= "noofdontknow" class="identity">no of dont know checked</div>
+    <div id="dontknows" class="ynd"></div>
+    </div>
+    <button type="button"  onclick="marks()" class="btn btn-primary">Submit</button>
+    <p>hello dear</p>
+    <script type="text/javascript" src="D:\projects\questions\js\jquery-3.6.0.min.js"></script>
+   <script>
+     
+     console.log($("div"))
+     var pdiv = $( "p" ).add( "div" );
+     console.log(pdiv)
+     console.log($( "div" ).add( "p" ).addClass("widget"));
+     $( "p" ).add( "<p id='new'>how are you</p>" )
+  .css( "background-color", "red" ).appendTo(document.body);
+  console.log($( "li" ).add( document.getElementsByTagName( "p" )[0] )
+  .css( "background-color", "yellow" ));
+     
+$( document ).ready(function() {
+ $( "div" ).click(function(event) {
+
+     alert( "Thanks for visiting!" );
+     event.preventDefault();
+ });
+
+});
+$( "#noofdontknow" ).bind( "click", function() {
+  alert( $( this ).text() );
+});
+    </script>
+        
+    </body>
+</html>
