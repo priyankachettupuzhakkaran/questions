@@ -1,15 +1,30 @@
+var $divv=$("<div class='container-fluid'></div>")
 var $row=$("<div class='row'></div>")
 var $col1=$("<div class='col-6 col-md-4'></div>")
  var $col2=$("<div class='col-md-8'></div>")
  $row.append($col1).append($col2)
+$divv.append($row)
 
-
-questions=[{question:"what is html?",
-types:"checkbox",
-options:["yes","No","dontknow"]},
-{question:"what is javascript?",
-types:"radio",
-options:["yes","No","dontknow"]}]
+questions=[{
+  question:"what is html?",
+  types:"checkbox",
+  options:["yes","No","dontknow"]
+},
+{
+  question:"what is javascript?",
+  types:"radio",
+  options:["yes","No","dontknow"]
+},
+{
+  question:"Are you Pregnant?",
+  types:"radio",
+  options:["yes","No","dontknow"]
+},
+{
+  question:"is it a boy?",
+  types:"checkbox",
+  options:["yes","No","dontknow"]
+}]
 jQuery.each( questions, function( i, val ){
   
   var $div = $("<div class='mydiv '></div");
@@ -31,8 +46,8 @@ jQuery.each( questions, function( i, val ){
      $("label").addClass("form-check-label") 
       $("div.form-check form-check-inline")
       
-      $("body").append($row);
-      console.log(5)
+      $("body").append($divv);
+    
 })
 })
 
